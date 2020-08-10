@@ -1,4 +1,4 @@
-# routing
+# Vue Routing
 
 > A Vuejs routing project
 
