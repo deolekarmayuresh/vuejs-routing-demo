@@ -16,7 +16,7 @@
         <ul>
             <li><button @click="goBack">Go Back</button></li>
             <li><button @click="goHome">Redirect to Home</button></li>
-
+            <li><button @click="goForward">Go Forward</button></li>
         </ul>
     </nav>
 </template>
@@ -35,6 +35,9 @@ export default {
         },
         goBack() {
             this.$router.go(-1)
+        },
+        goForward() {
+            this.$router.go(+1)
         }
     },
     }
@@ -49,6 +52,11 @@ ul{
 
 a{
     color: lightgreen;
+}
+
+li{
+    display: inline-block;
+    margin: 30px;
 }
     
 </style>
